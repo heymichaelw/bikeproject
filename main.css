@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Oleo Script';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Oleo Script'), url(http://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Poiret One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poiret One'), url(http://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.site-header{
+  position: relative;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px rgb(0,0,0);
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  width: 1280px;
+  height: 328px;
+  background-image: url('../img/header-background.jpg');
+  background-size: cover;
+}
+
+.main-heading{
+  font-family: 'Poiret One';
+  display: inline-block;
+  font-size: 55px;
+  position: relative;
+  z-index: 2;
+}
+
+.divider{
+  
+}
+
+.subheader-msg{
+  margin-top: 20px;
+  font-family: 'Oleo Script';
+}
+
+.logo{
+  background-image: url('../img/logo.png');
+  position: relative;
+  z-index: 1;
+}
+
+.site-header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.site-imgs{
+  height: 238px;
+}
+
+.image-cards{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+#left-img{
+  height: 190px;
+  width: 190px;
+  margin: 5px;
+  box-shadow: 2px 2px rgb(0,0,0);
+  background-size: cover;
+  background-image: url('../img/left-img.jpg');
+}
+
+#middle-img{
+  height: 190px;
+  width: 190px;
+  margin: 5px;
+  box-shadow: 2px 2px rgb(0,0,0);
+  background-size: cover;
+  background-image: url('../img/middle-img.jpg');
+}
+
+#right-img{
+  height: 190px;
+  width: 190px;
+  margin: 5px;
+  box-shadow: 2px 2px rgb(0,0,0);
+  background-size: cover;
+  background-image: url('../img/right-img.jpg');
+}
+
+.contact-wrapper{
+  padding: 10px;
+  font-family: 'Poiret One';
+  text-align: center;
+}
+
+.contact-wrapper>div{
+  margin: 15px;
+}
+
+.callout-msg{
+  height: 98px;
+  color: white;
+  text-shadow: 2px 2px rgb(0,0,0);
+  background-color: rgb(67,153,106);
+  padding: 10px 100px 10px 100px;
+  font-family: 'Poiret One';
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-wrapper{
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
