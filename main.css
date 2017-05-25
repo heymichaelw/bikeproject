@@ -32,9 +32,8 @@ body{
   left: 0;
   right: 0;
   padding-top: 20px;
-  width: 1280px;
   height: 328px;
-  background-image: url('../img/header-background.jpg');
+  background-image: url('header-background.jpg');
   background-size: cover;
 }
 
@@ -47,7 +46,7 @@ body{
 }
 
 .divider{
-  
+
 }
 
 .subheader-msg{
@@ -56,9 +55,13 @@ body{
 }
 
 .logo{
-  background-image: url('../img/logo.png');
-  position: relative;
-  z-index: 1;
+  background-image: url('logo.png');
+  background-size: cover;
+  position: absolute;
+  top: 90px;
+  right: 180px;
+  width: 215px;
+  height: 265px;
 }
 
 .site-header::before{
@@ -88,7 +91,7 @@ body{
   margin: 5px;
   box-shadow: 2px 2px rgb(0,0,0);
   background-size: cover;
-  background-image: url('../img/left-img.jpg');
+  background-image: url('left-img.jpg');
 }
 
 #middle-img{
@@ -97,7 +100,7 @@ body{
   margin: 5px;
   box-shadow: 2px 2px rgb(0,0,0);
   background-size: cover;
-  background-image: url('../img/middle-img.jpg');
+  background-image: url('middle-img.jpg');
 }
 
 #right-img{
@@ -106,7 +109,7 @@ body{
   margin: 5px;
   box-shadow: 2px 2px rgb(0,0,0);
   background-size: cover;
-  background-image: url('../img/right-img.jpg');
+  background-image: url('right-img.jpg');
 }
 
 .contact-wrapper{
