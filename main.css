@@ -20,7 +20,11 @@
 body{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  width: 1000px;
+  margin-left: 50px;
 }
 
 .site-header{
@@ -32,17 +36,23 @@ body{
   left: 0;
   right: 0;
   padding-top: 20px;
-  height: 328px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url('header-background.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 .main-heading{
   font-family: 'Poiret One';
   display: inline-block;
-  font-size: 55px;
+  font-size: 50px;
   position: relative;
   z-index: 2;
+  margin-top: 10px;
+  padding-bottom: 30px;
 }
 
 .divider{
@@ -59,10 +69,11 @@ body{
   background-size: cover;
   position: absolute;
   top: 90px;
-  right: 180px;
+  right: 70px;
   width: 215px;
   height: 265px;
-}
+  filter: invert(100%);
+  }
 
 .site-header::before{
     content: '';
@@ -76,6 +87,9 @@ body{
 
 .site-imgs{
   height: 238px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-cards{
@@ -123,14 +137,15 @@ body{
 }
 
 .callout-msg{
-  height: 98px;
+  height: auto;
   color: white;
   text-shadow: 2px 2px rgb(0,0,0);
   background-color: rgb(67,153,106);
-  padding: 10px 100px 10px 100px;
+  padding: 10px 240px 10px 240px;
   font-family: 'Poiret One';
   font-size: 20px;
   text-align: center;
+  line-height: 2;
 }
 
 .footer-wrapper{
